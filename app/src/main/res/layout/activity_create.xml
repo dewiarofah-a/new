@@ -33,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@android:color/background_dark"
             android:inputType="number"/>
     </LinearLayout>
     <LinearLayout
@@ -51,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@android:color/background_dark"
             android:inputType="text"/>
     </LinearLayout>
     <LinearLayout
@@ -69,6 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@android:color/background_dark"
             android:inputType="number" />
         <TextView
             android:layout_width="wrap_content"
@@ -92,6 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@android:color/background_dark"
             android:inputType="text"/>
     </LinearLayout>
     <LinearLayout
@@ -110,6 +114,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@android:color/background_dark"
             android:inputType="text"/>
     </LinearLayout>
 
