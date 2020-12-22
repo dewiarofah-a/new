@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/list_item">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="74dp"
+        android:layout_weight="2.5"
+        app:srcCompat="@drawable/covid" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="6dp">
+
+        <TextView
+            android:id="@+id/harix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Hari:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"/>
+        <TextView
+            android:id="@+id/tanggalx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tanggal:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"/>
+
+        <TextView
+            android:id="@+id/suhux"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="suhu:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"/>
+        <TextView
+            android:id="@+id/keluhanx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="keluhan:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"/>
+        <TextView
+            android:id="@+id/kontakx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="kontak:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
