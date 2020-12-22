@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff"
-    tools:context=".CreateActivity">
+    tools:context=".UpdateActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             android:textColor="@android:color/darker_gray"/>
 
         <EditText
-            android:id="@+id/hari"
+            android:id="@+id/new_hari"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -48,7 +48,7 @@
             android:textColor="@android:color/darker_gray"/>
 
         <EditText
-            android:id="@+id/tanggal"
+            android:id="@+id/new_tanggal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -67,7 +67,7 @@
             android:textColor="@android:color/darker_gray"/>
 
         <EditText
-            android:id="@+id/suhu"
+            android:id="@+id/new_suhu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -91,7 +91,7 @@
             android:textColor="@android:color/darker_gray"/>
 
         <EditText
-            android:id="@+id/keluhan"
+            android:id="@+id/new_keluhan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -110,7 +110,7 @@
             android:textColor="@android:color/darker_gray"/>
 
         <EditText
-            android:id="@+id/kontak"
+            android:id="@+id/new_kontak"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -119,7 +119,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/update"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="21dp"

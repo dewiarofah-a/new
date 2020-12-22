@@ -1,9 +1,13 @@
 package com.example.anew
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.app.LauncherActivity
 import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
 import android.net.sip.SipSession
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -53,12 +57,34 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
         holder.Suhu.text="Suhu: $Suhu"
         holder.Keluhan.text="Keluhan: $Keluhan"
         holder.Kontak.text="Kontak: $Kontak"
-        holder.ListItem.setOnLongClickListener(object :View.OnLongClickListener{
-
-
+        holder.ListItem.setOnLongClickListener(object : View.OnLongClickListener {
             override fun onLongClick(v: View?): Boolean {
-                return true
-
+                holder.ListItem.setOnLongClickListener { view ->
+                    val action = arrayOf("Update", "Delete")
+                    val alert: AlertDialog.Builder = AlertDialog.Builder(view.context)
+                    alert.setItems(action, DialogInterface.OnClickListener { dialog, i ->
+                        when (i) {
+                            0 -> {
+                                val bundle = Bundle()
+                                bundle.putString("hari", listPengguna[position].hari)
+                                bundle.putString("tanggal", listPengguna[position].tanggal)
+                                bundle.putString("suhu", listPengguna[position].suhu)
+                                bundle.putString("keluhan", listPengguna[position].keluhan)
+                                bundle.putString("kontak", listPengguna[position].kontak)
+                                bundle.putString("getPrimaryKey", listPengguna[position].key)
+                                val intent = Intent(view.context, UpdateActivity::class.java)
+                                intent.putExtras(bundle)
+                                context.startActivity(intent)
+                            }
+                            1 -> {
+                            }
+                        }
+                    })
+                    alert.create()
+                    alert.show()
+                    true
+                }
+                return true;
             }
         })
     }
