@@ -27,7 +27,6 @@ class MyListDataActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_list_data)
         recyclerView = findViewById(R.id.listdata)
-        supportActionBar!!.title = "data_pengguna"
         auth=FirebaseAuth.getInstance()
         MyRecycleView()
         GetData()
