@@ -42,13 +42,14 @@
         android:textColor="#FFFFFF"
         android:layout_marginLeft="16dp" />
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/loginiv"
-        android:layout_marginTop="63dp"
-        android:layout_marginBottom="96dp"
-        android:layout_gravity="center"/>
+<!--    <ImageView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:src="@drawable/loginiv"-->
+<!--        android:layout_marginTop="63dp"-->
+<!--        android:layout_marginBottom="96dp"-->
+<!--        android:layout_gravity="center"/>-->
+<!--    -->
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
