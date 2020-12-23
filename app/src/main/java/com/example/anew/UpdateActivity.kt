@@ -1,10 +1,10 @@
 package com.example.anew
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -56,14 +56,14 @@ class UpdateActivity : AppCompatActivity() {
     }
     private val data: Unit
         private get() {
-            val getHari = intent.extras!!.getString("dataHari")
-            val getTanggal = intent.extras!!.getString("dataTanggal")
-            val getSuhu = intent.extras!!.getString("dataSuhu")
-            val getKeluhan = intent.extras!!.getString("dataKeluhan")
-            val getKontak = intent.extras!!.getString("dataKontak")
+            val getHari = intent.extras!!.getString("hari")
+            val getTanggal = intent.extras!!.getString("tanggal")
+            val getSuhu = intent.extras!!.getString("suhu")
+            val getKeluhan = intent.extras!!.getString("keluhan")
+            val getKontak = intent.extras!!.getString("kontak")
             new_hari!!.setText(getHari)
             new_tanggal!!.setText(getTanggal)
-            new_keluhan!!.setText(getSuhu)
+            new_suhu!!.setText(getSuhu)
             new_keluhan!!.setText(getKeluhan)
             new_kontak!!.setText(getKontak)
         }
