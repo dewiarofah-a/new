@@ -1,3 +1,11 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Aku Sehat</string>
+=======
+<<<<<<< HEAD
+    <string name="app_name">Aku Sehat</string>
+=======
+    <string name="app_name">New</string>
+>>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 </resources>

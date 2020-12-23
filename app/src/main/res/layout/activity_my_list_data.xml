@@ -5,15 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="8dp"
+<<<<<<< HEAD
     android:background="@color/colorAccent"
+=======
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
     tools:context=".MyListDataActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/listdata"
+<<<<<<< HEAD
         android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/view_design"/>
+=======
+<<<<<<< HEAD
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/view_design"/>
+=======
+        android:scrollbars="vertical"/>
+>>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 
 </RelativeLayout>

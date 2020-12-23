@@ -3,7 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
     android:background="@drawable/bulat"
+=======
+    android:background="#FFFFFF"
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
     android:gravity="center"
     android:orientation="horizontal"
     android:id="@+id/list_item">
