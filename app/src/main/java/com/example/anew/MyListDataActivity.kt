@@ -1,16 +1,22 @@
 package com.example.anew
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+<<<<<<< HEAD
+=======
 =======
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -31,8 +37,12 @@ class MyListDataActivity : AppCompatActivity() {
 <<<<<<< HEAD
     private var auth: FirebaseAuth?=null
 =======
+<<<<<<< HEAD
+    private var auth: FirebaseAuth?=null
+=======
     private  var auth: FirebaseAuth?=null
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,8 +79,12 @@ class MyListDataActivity : AppCompatActivity() {
 <<<<<<< HEAD
                         Log.e("MyListDataActivity",databaseError.details+" "+ databaseError.message)
 =======
+<<<<<<< HEAD
+                        Log.e("MyListDataActivity",databaseError.details+" "+ databaseError.message)
+=======
                         Log.e("MyListActivity",databaseError.details+" "+ databaseError.message)
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 
                     }
                 })
@@ -81,10 +95,15 @@ class MyListDataActivity : AppCompatActivity() {
         layoutManager= LinearLayoutManager(this)
         recyclerView?.layoutManager= layoutManager
 =======
+<<<<<<< HEAD
+        layoutManager= LinearLayoutManager(this)
+        recyclerView?.layoutManager= layoutManager
+=======
         
         layoutManager= LinearLayoutManager(this)
         recyclerView?.layoutManager=layoutManager
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
         recyclerView?.setHasFixedSize(true)
 
         val itemDecoration= DividerItemDecoration(applicationContext, DividerItemDecoration.VERTICAL)

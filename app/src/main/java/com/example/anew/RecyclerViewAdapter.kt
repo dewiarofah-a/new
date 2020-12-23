@@ -7,12 +7,18 @@ import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 =======
+<<<<<<< HEAD
+import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
+=======
 import android.app.LauncherActivity
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.sip.SipSession
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,10 +27,15 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 
 class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,context:Context):
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
         private var context: Context
+<<<<<<< HEAD
+=======
 =======
 import org.w3c.dom.Text
 
@@ -32,6 +43,7 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
         private val context: Context
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 
         inner class ViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
             val Hari: TextView
@@ -53,6 +65,9 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
         }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
       val V:View = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_design, parent,false)
@@ -60,6 +75,8 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
     }
 
 
+<<<<<<< HEAD
+=======
 =======
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
       val V:View=LayoutInflater.from(parent.getContext()).inflate(R.layout.view_design,parent,false)
@@ -67,6 +84,7 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
     }
 
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val Hari:String?=listPengguna.get(position).hari
@@ -76,12 +94,17 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
         val Kontak:String?=listPengguna.get(position).kontak
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
         holder.Hari.text="hari: $Hari"
         holder.Tanggal.text="tanggal: $Tanggal"
         holder.Suhu.text="suhu: $Suhu"
         holder.Keluhan.text="keluhan: $Keluhan"
         holder.Kontak.text="kontak: $Kontak"
 
+<<<<<<< HEAD
+=======
 =======
         holder.Hari.text="Hari: $Hari"
         holder.Tanggal.text="Tanggal: $Tanggal"
@@ -89,6 +112,7 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
         holder.Keluhan.text="Keluhan: $Keluhan"
         holder.Kontak.text="Kontak: $Kontak"
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
         holder.ListItem.setOnLongClickListener(object : View.OnLongClickListener {
             override fun onLongClick(v: View?): Boolean {
                 holder.ListItem.setOnLongClickListener { view ->
@@ -112,7 +136,11 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
                             }
                         }
                     })
@@ -135,9 +163,15 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
     }
 
 =======
+<<<<<<< HEAD
+        this.context = context
+    }
+
+=======
         this.context=context
     }
 
 
 >>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
+>>>>>>> 211023313ad670c2c35db88fcee750aacd15d7bc
 }
