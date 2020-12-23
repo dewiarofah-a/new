@@ -4,9 +4,15 @@
 
     <application
         android:allowBackup="true"
+<<<<<<< HEAD
+        android:icon="@mipmap/awal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/awal"
+=======
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+>>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".UpdateActivity"></activity>

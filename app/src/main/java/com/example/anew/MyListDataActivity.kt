@@ -1,9 +1,16 @@
 package com.example.anew
 
+<<<<<<< HEAD
+import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+=======
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+>>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,7 +28,11 @@ class MyListDataActivity : AppCompatActivity() {
 
     val database = FirebaseDatabase.getInstance()
     private var dataPengguna=ArrayList<data_pengguna>()
+<<<<<<< HEAD
+    private var auth: FirebaseAuth?=null
+=======
     private  var auth: FirebaseAuth?=null
+>>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,16 +66,25 @@ class MyListDataActivity : AppCompatActivity() {
 
                     override fun onCancelled(databaseError: DatabaseError) {
                         Toast.makeText(applicationContext,"data gagal dimuat", Toast.LENGTH_LONG).show()
+<<<<<<< HEAD
+                        Log.e("MyListDataActivity",databaseError.details+" "+ databaseError.message)
+=======
                         Log.e("MyListActivity",databaseError.details+" "+ databaseError.message)
+>>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
 
                     }
                 })
     }
 
     private  fun MyRecycleView(){
+<<<<<<< HEAD
+        layoutManager= LinearLayoutManager(this)
+        recyclerView?.layoutManager= layoutManager
+=======
         
         layoutManager= LinearLayoutManager(this)
         recyclerView?.layoutManager=layoutManager
+>>>>>>> 0fc3dd02a03c3fc8549e540923f860411c9117b3
         recyclerView?.setHasFixedSize(true)
 
         val itemDecoration= DividerItemDecoration(applicationContext, DividerItemDecoration.VERTICAL)
