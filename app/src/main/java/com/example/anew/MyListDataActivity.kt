@@ -1,9 +1,9 @@
 package com.example.anew
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,7 +21,7 @@ class MyListDataActivity : AppCompatActivity() {
 
     val database = FirebaseDatabase.getInstance()
     private var dataPengguna=ArrayList<data_pengguna>()
-    private  var auth: FirebaseAuth?=null
+    private var auth: FirebaseAuth?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,16 +55,15 @@ class MyListDataActivity : AppCompatActivity() {
 
                     override fun onCancelled(databaseError: DatabaseError) {
                         Toast.makeText(applicationContext,"data gagal dimuat", Toast.LENGTH_LONG).show()
-                        Log.e("MyListActivity",databaseError.details+" "+ databaseError.message)
+                        Log.e("MyListDataActivity",databaseError.details+" "+ databaseError.message)
 
                     }
                 })
     }
 
     private  fun MyRecycleView(){
-        
         layoutManager= LinearLayoutManager(this)
-        recyclerView?.layoutManager=layoutManager
+        recyclerView?.layoutManager= layoutManager
         recyclerView?.setHasFixedSize(true)
 
         val itemDecoration= DividerItemDecoration(applicationContext, DividerItemDecoration.VERTICAL)
