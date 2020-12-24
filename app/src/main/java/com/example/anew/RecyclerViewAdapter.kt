@@ -78,7 +78,7 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
                                 context.startActivity(intent)
                             }
                             1 -> {
-
+                                listener?.onDeleteData(listPengguna.get(position), position)
                             }
                         }
                     })
@@ -97,6 +97,17 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
 
     init {
         this.context = context
+    }
+
+    interface dataListener {
+        fun onDeleteData(data: data_pengguna?, position: Int)
+    }
+    var listener: dataListener? = null
+    fun RecyclerViewAdapter(listPengguna: ArrayList<data_pengguna>?, context:
+    Context?) {
+        this.listPengguna= listPengguna!!
+        this.context = context!!
+        listener = context as MyListDataActivity?
     }
 
 }
