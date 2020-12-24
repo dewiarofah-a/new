@@ -71,4 +71,25 @@ class MyListDataActivity : AppCompatActivity() {
         recyclerView?.addItemDecoration(itemDecoration)
     }
 
+    override fun onDeleteData(data: data_pengguna?, position: Int) {
+        val getUserID: String = auth?.getCurrentUser()?.getUid().toString()
+        val getReference = database.getReference()
+        val getKey = intent.extras!!.getString("getPrimaryKey")
+        if (getReference != null) {
+            getReference.child("Admin")
+                .child(getUserID)
+                .child("COVID")
+                .child(getKey!!)
+                .removeValue()
+                .addOnSuccessListener {
+                    Toast.makeText(
+                        this@MyListDataActivity, "Data Berhasil Dihapus",
+                        Toast.LENGTH_SHORT
+                    ).show();
+                    finish()
+                }
+
+        }
+    }
+
 }
