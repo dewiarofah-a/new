@@ -14,7 +14,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
 
-class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,context:Context):
+class RecyclerViewAdapter (private var listPengguna: ArrayList<data_pengguna>, context:Context):
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
         private var context: Context
 
@@ -50,7 +50,6 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
         val Suhu:String?=listPengguna.get(position).suhu
         val Keluhan:String?=listPengguna.get(position).keluhan
         val Kontak:String?=listPengguna.get(position).kontak
-
 
         holder.Hari.text="hari: $Hari"
         holder.Tanggal.text="tanggal: $Tanggal"
@@ -95,19 +94,22 @@ class RecyclerViewAdapter (private  val listPengguna: ArrayList<data_pengguna>,c
         return listPengguna.size
     }
 
+    var listener: dataListener? = null
+
     init {
         this.context = context
+        this.listener=context as MyListDataActivity
     }
 
     interface dataListener {
         fun onDeleteData(data: data_pengguna?, position: Int)
     }
-    var listener: dataListener? = null
-    fun RecyclerViewAdapter(listPengguna: ArrayList<data_pengguna>?, context:
-    Context?) {
+
+    fun RecyclerViewAdapter(listPengguna: ArrayList<data_pengguna>?, context: Context?) {
         this.listPengguna= listPengguna!!
-        this.context = context!!
+  //      this.context = context!!
         listener = context as MyListDataActivity?
     }
+
 
 }

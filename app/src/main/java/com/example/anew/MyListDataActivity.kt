@@ -14,7 +14,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class MyListDataActivity : AppCompatActivity() {
+class MyListDataActivity : AppCompatActivity(), RecyclerViewAdapter.dataListener {
     private var recyclerView: RecyclerView?=null
     private var adapter:RecyclerView.Adapter<*>?=null
     private var layoutManager:RecyclerView.LayoutManager?=null
@@ -74,20 +74,21 @@ class MyListDataActivity : AppCompatActivity() {
     override fun onDeleteData(data: data_pengguna?, position: Int) {
         val getUserID: String = auth?.getCurrentUser()?.getUid().toString()
         val getReference = database.getReference()
-        val getKey = intent.extras!!.getString("getPrimaryKey")
         if (getReference != null) {
             getReference.child("Admin")
                 .child(getUserID)
                 .child("COVID")
-                .child(getKey!!)
+                .child(data?.key.toString())
                 .removeValue()
                 .addOnSuccessListener {
-                    Toast.makeText(
-                        this@MyListDataActivity, "Data Berhasil Dihapus",
-                        Toast.LENGTH_SHORT
-                    ).show();
-                    finish()
+                    Toast.makeText(this@MyListDataActivity, "Data Berhasil Dihapus",
+                        Toast.LENGTH_SHORT).show()
                 }
+
+                }else{
+                Toast.makeText(this@MyListDataActivity, "Reference kosong",
+                Toast.LENGTH_SHORT).show()
+
 
         }
     }
