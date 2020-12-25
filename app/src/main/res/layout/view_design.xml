@@ -29,7 +29,7 @@
             android:text="Hari:"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/purple_500"/>
+            android:textColor="@android:color/black"/>
         <TextView
             android:id="@+id/tanggalx"
             android:layout_width="match_parent"
@@ -37,8 +37,7 @@
             android:layout_marginTop="4dp"
             android:text="Tanggal:"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/purple_500"/>
+            android:textColor="@android:color/black"/>
 
         <TextView
             android:id="@+id/suhux"
@@ -47,8 +46,7 @@
             android:layout_marginTop="4dp"
             android:text="suhu:"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/purple_500"/>
+            android:textColor="@android:color/black"/>
         <TextView
             android:id="@+id/keluhanx"
             android:layout_width="match_parent"
@@ -56,8 +54,7 @@
             android:layout_marginTop="4dp"
             android:text="keluhan:"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/purple_500"/>
+            android:textColor="@android:color/black"/>
         <TextView
             android:id="@+id/kontakx"
             android:layout_width="match_parent"
@@ -65,8 +62,7 @@
             android:layout_marginTop="4dp"
             android:text="kontak:"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/purple_500"/>
+            android:textColor="@android:color/black"/>
 
 
     </LinearLayout>

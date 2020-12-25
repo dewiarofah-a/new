@@ -39,6 +39,7 @@ class MyListDataActivity : AppCompatActivity(), RecyclerViewAdapter.dataListener
         getReference.child("Admin").child(getUserID).child("COVID").addValueEventListener(object : ValueEventListener {
                     override fun onDataChange(datasnapshot: DataSnapshot) {
                         if(datasnapshot.exists()){
+                            dataPengguna.clear()
                             for (snapshot in datasnapshot.children){
                                 val pengguna =snapshot.getValue(data_pengguna::class.java)
                                 pengguna?.key=snapshot.key

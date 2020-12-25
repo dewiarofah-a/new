@@ -51,11 +51,11 @@ class RecyclerViewAdapter (private var listPengguna: ArrayList<data_pengguna>, c
         val Keluhan:String?=listPengguna.get(position).keluhan
         val Kontak:String?=listPengguna.get(position).kontak
 
-        holder.Hari.text="hari: $Hari"
-        holder.Tanggal.text="tanggal: $Tanggal"
-        holder.Suhu.text="suhu: $Suhu"
-        holder.Keluhan.text="keluhan: $Keluhan"
-        holder.Kontak.text="kontak: $Kontak"
+        holder.Hari.text="Hari ke- : $Hari"
+        holder.Tanggal.text="Tanggal: $Tanggal"
+        holder.Suhu.text="Suhu Badan: $Suhu"
+        holder.Keluhan.text="Keluhan: $Keluhan"
+        holder.Kontak.text="Kontak erat: $Kontak"
 
         holder.ListItem.setOnLongClickListener(object : View.OnLongClickListener {
             override fun onLongClick(v: View?): Boolean {

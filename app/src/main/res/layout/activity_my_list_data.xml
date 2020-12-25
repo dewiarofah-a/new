@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
-    android:background="@color/colorAccent"
+    android:background="#ffffff"
     tools:context=".MyListDataActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -13,6 +12,7 @@
         android:layout_height="match_parent"
         android:id="@+id/listdata"
         android:scrollbars="vertical"
+        android:layout_margin="8dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/view_design"/>
 

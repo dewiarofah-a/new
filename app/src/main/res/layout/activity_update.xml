@@ -126,7 +126,7 @@
         android:background="@drawable/call_button"
         android:fontFamily="@font/graphikmedium"
         android:paddingLeft="16dp"
-        android:text="SIMPAN"
+        android:text="UPDATE"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
