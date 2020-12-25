@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         logout.setOnClickListener(this)
         tambah.setOnClickListener(this)
         show_data.setOnClickListener(this)
+        info.setOnClickListener(this)
 
         auth = FirebaseAuth.getInstance()
     }
@@ -52,6 +53,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(Intent(this@MainActivity, MyListDataActivity::class.java))
 
         }
+         R.id.info -> {
+             startActivity(Intent(this@MainActivity, WebViewActivity::class.java))
+         }
         }
     }
 }

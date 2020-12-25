@@ -72,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp"
-            android:layout_marginBottom="21dp"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/graphikmedium"
             android:text="Tips New Normal"
             android:textColor="#ff499e"
@@ -232,7 +232,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/stat_button"
                     android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
@@ -242,7 +242,7 @@
                     android:text="Tambah Data"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#ff499e"
                     android:textSize="16sp"
                     android:layout_gravity="start" />
                 <Button
@@ -251,7 +251,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="21dp"
+                    android:layout_marginTop="12dp"
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/stat_button"
                     android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
@@ -261,7 +261,25 @@
                     android:text="Lihat Data"
                     android:textAlignment="viewStart"
                     android:textAllCaps="false"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#ff499e"
                     android:textSize="16sp"/>
+        <Button
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/call_button"
+            android:drawableLeft="@drawable/ic_info"
+            android:fontFamily="@font/graphiksemibold"
+            android:includeFontPadding="false"
+            android:paddingLeft="9dp"
+            android:text="  Info Kesehatan"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
             </LinearLayout>
 </ScrollView>
